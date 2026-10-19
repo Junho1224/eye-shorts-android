@@ -1,0 +1,39 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.eyeshorts.app'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.eyeshorts.app'
+        minSdk 26
+        targetSdk 36
+        versionCode 7
+        versionName '0.1.6'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    signingConfigs {
+        debug {
+            storeFile rootProject.file('.build-tools/debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+    buildTypes { release { minifyEnabled false } }
+    androidResources { noCompress += 'task' }
+    lint { abortOnError true; checkReleaseBuilds true }
+    testOptions { unitTests.returnDefaultValues = true }
+}
+dependencies {
+    implementation 'androidx.activity:activity:1.10.1'
+    implementation 'androidx.core:core:1.16.0'
+    implementation 'androidx.lifecycle:lifecycle-service:2.9.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.9.0'
+    implementation 'androidx.camera:camera-core:1.4.2'
+    implementation 'androidx.camera:camera-camera2:1.4.2'
+    implementation 'androidx.camera:camera-lifecycle:1.4.2'
+    implementation 'com.google.mediapipe:tasks-vision:0.10.35'
+    testImplementation 'junit:junit:4.13.2'
+}

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EyeShorts</string>
+    <string name="accessibility_label">EyeShorts · 눈으로 넘기기</string>
+    <string name="accessibility_description">사용자가 눈·입으로 내린 명령에 따라 유튜브 쇼츠와 인스타그램 릴스에서 위/아래 스와이프 또는 재생/일시정지를 위한 중앙 탭을 보냅니다. 두 앱의 이름과 재생 화면 구조를 확인하며, 화면 내용은 저장하거나 전송하지 않습니다. Android 설정에서 언제든 해제할 수 있습니다.</string>
+    <string name="notification_channel">눈으로 쇼츠·릴스 넘기기</string>
+    <string name="notification_title">EyeShorts · 전면 카메라 사용 중</string>
+    <string name="stop">종료</string>
+    <string name="pause">일시정지</string>
+    <string name="practice_command_counts">다음 %1$d · 이전 %2$d · 재생/멈춤 %3$d</string>
+    <string name="calibration_position_tip">휴대폰을 고정하고 30–45cm 거리에서\n머리는 그대로, 눈만 움직여주세요.</string>
+    <string name="mouth_practice_count">입 인식 성공 %1$d회\n연습에서는 영상을 탭하지 않아요</string>
+    <string name="trial_practice_count">20회 시도 후 완료 · 감지 %1$d회\n%2$s</string>
+    <string name="practice_count_summary">%1$s\n연습에서는 실제 화면을 제어하지 않아요</string>
+</resources>
